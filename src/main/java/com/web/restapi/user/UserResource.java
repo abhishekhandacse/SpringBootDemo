@@ -1,8 +1,7 @@
 package com.web.restapi.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -11,13 +10,17 @@ public class UserResource {
 
     @Autowired
     private UserDaoService service;
-    //GET /users
 
     @GetMapping("/users")
     public List<User> retrieveAllUsers(){
         return service.findAll();
     }
-    // retrive User by id
-
-    //
+    @GetMapping("/users/{id}")
+    public User retrieveUser(@PathVariable int id){
+        return service.findOne(id);
+    }
+    @PostMapping("/users")
+    public void createUser(@RequestBody User user){
+        User savedUser=service.save(user);
+    }
 }
