@@ -1,4 +1,4 @@
-package com.web.restapi;
+package com.web.restapi.helloworld;
 
 public class HelloWorldBean {
     private String message;

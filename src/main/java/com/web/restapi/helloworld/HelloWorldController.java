@@ -1,4 +1,4 @@
-package com.web.restapi;
+package com.web.restapi.helloworld;
 
 import org.springframework.web.bind.annotation.*;
 
