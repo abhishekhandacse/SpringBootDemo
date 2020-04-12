@@ -18,6 +18,7 @@ public class UserResource {
     public List<User> retrieveAllUsers(){
         return service.findAll();
     }
+
     @GetMapping("/users/{id}")
     public User retrieveUser(@PathVariable int id){
         User user = service.findOne(id);
@@ -26,8 +27,6 @@ public class UserResource {
         return user;
     }
 
-
-
     @PostMapping("/users")
     public ResponseEntity<Object> createUser(@RequestBody User user){
         User savedUser=service.save(user);
@@ -35,5 +34,11 @@ public class UserResource {
         //Building path like   /users/{id}
         URI location=ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(savedUser.getId()).toUri();
         return ResponseEntity.created(location).build();
+    }
+    @DeleteMapping("/users/{id}")
+    public void deleteUser(@PathVariable int id){
+        User user=service.deleteById(id);
+        if(user==null)
+            throw new UserNotFoundException("id");
     }
 }
