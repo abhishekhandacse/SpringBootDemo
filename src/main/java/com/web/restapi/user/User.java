@@ -3,6 +3,7 @@ package com.web.restapi.user;
 
 
 import com.sun.istack.NotNull;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -18,6 +19,7 @@ public class User {
     @Size(min=2,message = "Name should have atleast 2 characters")
     private String name;
 
+    @JsonIgnore// This annotation helps in static filtering
     @Past
     private Date birthdate;
 
