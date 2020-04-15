@@ -19,7 +19,7 @@ public class User {
     @Size(min=2,message = "Name should have atleast 2 characters")
     private String name;
 
-    @JsonIgnore// This annotation helps in static filtering
+  //  @JsonIgnore// This annotation helps in static filtering
     @Past
     private Date birthdate;
 
