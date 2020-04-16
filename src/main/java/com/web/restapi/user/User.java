@@ -15,7 +15,6 @@ public class User {
 
     private Integer id;
 
-    @NotNull
     @Size(min=2,message = "Name should have atleast 2 characters")
     private String name;
 
