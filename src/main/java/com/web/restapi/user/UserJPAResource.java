@@ -23,9 +23,6 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class UserJPAResource {
 
     @Autowired
-    private UserDaoService service;
-
-    @Autowired
     private UserRepository userRepository;
 
     @GetMapping("/jpa/users")
@@ -55,7 +52,6 @@ public class UserJPAResource {
     }
     @DeleteMapping("/jpa/users/{id}")
     public void deleteUser(@PathVariable int id){
-        if(!userRepository.findById(id).isPresent())throw new UserNotFoundException("Requested User to be deleted Not found " + id);
         userRepository.deleteById(id);
     }
 }
