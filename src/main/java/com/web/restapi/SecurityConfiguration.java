@@ -23,6 +23,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     protected void configure(HttpSecurity http) throws Exception{
         http .csrf().disable();         // This is a major security vulnerablity, but doing it just for testing environment
+        http.headers().frameOptions().disable();// For displaying h2 database console
+
              /*   .authorizeRequests()
                 .anyRequest().authenticated()
                 .and()
