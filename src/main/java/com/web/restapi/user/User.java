@@ -26,6 +26,7 @@ public class User {
     @Past
     private Date birthdate;
 
+    protected User(){}
     public User(Integer id, String name, Date birthdate) {
         this.id = id;
         this.name = name;
