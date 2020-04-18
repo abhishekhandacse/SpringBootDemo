@@ -1,17 +1,16 @@
-**Spring Boot Initializer for REST api**
-<br/>
-Hi 
-<br/>
-I have made this simple spring boot repository while doing udemy course of **RESTful web services with Sping and Spring Boot by In28minutes**.
-<br/>
-While this is no doubt a  Hello World in spring boot world but still this can serve as a starting point if you want to build some restful api quickly without reinventing the wheel.
-<br/>
-**_Feel free to fork / clone this repository and giving it your implementation._**
-<br/>
+##Spring Boot Initializer for REST api
+
+#### Hi 
+
+#####I have made this simple spring boot repository while doing
+####udemy course of RESTful web services with Spring and Spring Boot from In28minutes.
+
+#####While this is no doubt that this is a  Hello World in spring boot world but still this can serve as a good starting point if you want to build some restful api quickly without reinventing the wheel.
+
+#####_Feel free to fork / clone this repository and giving it your implementation._
 - - - -
-<br/>
-**In this repository I have implemented**
-<br/> 
+
+## This repository contains-: 
 
 - [x] Project Setup from spring initializer
  
@@ -25,11 +24,19 @@ While this is no doubt a  Hello World in spring boot world but still this can se
 
 - [x] Basic Swagger documentation and Swagger UI integrated
 
-- [ ] Monitoring API with Actuator 
+- [x] Monitoring API with Actuator 
 
-- [ ] Implementing Static filtering for RESTful API
+- [x] Implementing Static filtering for RESTful API
 
-- [ ] Implementing Dynamic filtering for RESTful API 
+- [x] Implementing Dynamic filtering for RESTful API 
 
-- [ ] Implementing basic authentication
+- [x] CSRF disabled for POST request testing.(Do enable it in production)
 
+- [x] Configured H2 console for visualizing entities
+
+- [x] Storage shifted from Static Array List to H2 in memory DB
+
+- [x] JPA interface extended for easier DB manipulation
+
+### In case of any queries or suggestions, Please feel free to shoot me an email at
+#### abhishekhandacse@gmail.com
