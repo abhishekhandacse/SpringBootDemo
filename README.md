@@ -1,11 +1,11 @@
-##Spring Boot Initializer for REST api
+## Spring Boot Initializer for REST api
 
 #### Hi 
 
-#####I have made this simple spring boot repository while doing
-####udemy course of RESTful web services with Spring and Spring Boot from In28minutes.
+##### I have made this simple spring boot repository while doing
+#### udemy course of RESTful web services with Spring and Spring Boot from In28minutes.
 
-#####While this is no doubt that this is a  Hello World in spring boot world but still this can serve as a good starting point if you want to build some restful api quickly without reinventing the wheel.
+##### While this is no doubt that this is a  Hello World in spring boot world but still this can serve as a good starting point if you want to build some restful api quickly without reinventing the wheel.
 
 #####_Feel free to fork / clone this repository and giving it your implementation._
 - - - -
@@ -37,6 +37,7 @@
 - [x] Storage shifted from Static Array List to H2 in memory DB
 
 - [x] JPA interface extended for easier DB manipulation
-
-### In case of any queries or suggestions, Please feel free to shoot me an email at
+- - - -
+#### In case of any queries or suggestions, Please feel free to ping at
 #### abhishekhandacse@gmail.com
+#### https://www.linkedin.com/in/abhishekhandacse/
