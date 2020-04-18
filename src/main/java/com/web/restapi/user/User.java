@@ -25,7 +25,6 @@ public class User {
     private Date birthdate;
 
     @OneToMany(mappedBy = "user")
-
     private List<Post> posts;
     protected User(){}
 
@@ -57,5 +56,9 @@ public class User {
 
     public void setBirthdate(Date birthdate) {
         this.birthdate = birthdate;
+    }
+
+    public List<Post> getPosts() {
+        return posts;
     }
 }
