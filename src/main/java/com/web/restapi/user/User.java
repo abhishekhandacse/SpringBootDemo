@@ -2,16 +2,14 @@ package com.web.restapi.user;
 
 
 
-import com.sun.istack.NotNull;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
-import javax.annotation.processing.Generated;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 public class User {
@@ -26,6 +24,9 @@ public class User {
     @Past
     private Date birthdate;
 
+    @OneToMany(mappedBy = "user")
+
+    private List<Post> posts;
     protected User(){}
 
     public User(Integer id, String name, Date birthdate) {
