@@ -3,12 +3,14 @@ package com.web.restapi.user;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Post {
     @Id
     @GeneratedValue
     private Integer id;
+    @Size(min=5)
     private String description;
 
     @ManyToOne(fetch = FetchType.LAZY)
